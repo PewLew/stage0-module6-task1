@@ -2,28 +2,28 @@ package com.epam.mjc.stage0;
 
 public class Animal {
     private String color;
-    private int number_Of_Paws = 0;
-    private boolean has_Fur;
+    private int numberOfPaws = 0;
+    private boolean hasFur;
     public Animal(){
 
     }
 
-    public Animal(String color, int number_Of_Paws, boolean has_Fur){
+    public Animal(String color, int numberOfPaws, boolean hasFur){
         this.color = color;
-        this.number_Of_Paws = number_Of_Paws;
-        this.has_Fur = has_Fur;
+        this.numberOfPaws = numberOfPaws;
+        this.hasFur = hasFur;
     }
 
     public String getDescription(){
         String myString;
         myString = "This animal is mostly " + color;
-        if(number_Of_Paws >1){
-            myString += ". It has " + number_Of_Paws + " paws ";
+        if(numberOfPaws >1){
+            myString += ". It has " + numberOfPaws + " paws ";
         }
         else
-            myString += ". It has " + number_Of_Paws + " paw ";
+            myString += ". It has " + numberOfPaws + " paw ";
 
-        if(has_Fur){
+        if(hasFur){
             myString += "and a fur.";
         }
         else
