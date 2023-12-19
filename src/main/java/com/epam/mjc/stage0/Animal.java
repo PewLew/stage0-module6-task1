@@ -2,7 +2,7 @@ package com.epam.mjc.stage0;
 
 public class Animal {
     private String color;
-    private int number_Of_Paws;
+    private int number_Of_Paws = 0;
     private boolean has_Fur;
     public Animal(){
 
@@ -18,10 +18,10 @@ public class Animal {
         String myString;
         myString = "This animal is mostly " + color;
         if(number_Of_Paws >1){
-            myString += ". It has " + number_Of_Paws + "paws ";
+            myString += ". It has " + number_Of_Paws + " paws ";
         }
         else
-            myString += ". It has " + number_Of_Paws + "paw ";
+            myString += ". It has " + number_Of_Paws + " paw ";
 
         if(has_Fur){
             myString += "and a fur.";
